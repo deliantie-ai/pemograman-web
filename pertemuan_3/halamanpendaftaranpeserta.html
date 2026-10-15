@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <style>
+        body { font-family: Arial; background: #f4f8ff; }
+        button { background: #1a56b0; color: white; padding: 6px 12px; border: none; cursor: pointer; }
+        h1 { color: #1a56b0; text-align: center; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background: #1a56b0; color: white; padding: 6px; }
+        td { border: 1px solid #ccd; padding: 6px; }
+        .aktif { background: #e6eefb; }
+        #judul { font-size: 24px; }
+        </style>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Pendaftaran Peserta</title>
+    </head>
+    <body>
+        <h1>Form Pendaftaran Peserta</h1>
+        <!-- Isi form pendaftaran peserta akan ditempatkan di sini -->
+        <form action="proses_pendaftaran.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="jk">Jenis Kelamin:</label>
+            <input type="radio" id="laki-laki" name="jk" value="Laki-laki" required>
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jk" value="Perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+
+            <label for="hobi">Hobi:</label>
+            <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+            <label for="musik">Musik</label><br><br>
+
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan">
+                <option value="">Pilih Jurusan</option>
+                <option value="Informatika">Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+            </select><br><br>
+
+            <button type="submit">Kirim</button>
+        <h2>Tabel</h2>
+    </body>
+</html>
