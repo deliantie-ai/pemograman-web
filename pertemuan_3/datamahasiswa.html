@@ -1,31 +1,33 @@
+<!---
+    Nama : Devita Yulianti
+    NIM  : 252520020    
+    Kelas: TI.B
+    Matkul: Pemrograman Web
+    Pertemuan 3 - Latihan Tugas
+-->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <title>Data Mahasiswa</title>
     <meta charset="UTF-8">
-
-    <!-- Mengatur tampilan halaman -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: hsl(209, 48%, 67%);
+            background-color: hwb(209 89% 3%);
             padding: 25px;
         }
-
         h1, h2 {
             color: oklab(44.241% -0.03081 -0.18137);
             text-align: center;
         }
-
         form {
             padding: 10px;
             border: 2px solid lab(0% 0 0);
         }
-
         .data {
             margin-bottom: 10px;
         }
-
         input[type="text"],
         input[type="email"],
         select,
@@ -35,57 +37,46 @@
             margin-top: 8px;
             box-sizing: border-box;
         }
-
         button {
             padding: 8px 15px;
-            background-color: hsl(240, 100%, 72%);
+            background-color: lab(51.07% 19.06 -39.96);
             color: white;
             border: none;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             color: lab(0% 0 0);
             margin-top: 5px;
         }
-
         th, td {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
         }
-
         th {
-            background-color: hsl(240, 100%, 72%);
+            background-color: hwb(240 44% 0% / 0.689);
             text-align: center;
         }
     </style>
 </head>
 <body>
-
 <div class="isi">
-
     <h1>Form Data Mahasiswa</h1>
-
     <!-- Form untuk mengisi data mahasiswa -->
-    <form action="#" method="post">
-
+    <form action="proses_pendaftaran.php" method="post">
         <div class="data">
             <label>NIM:</label>
             <input type="text" name="nim" required>
         </div>
-
         <div class="data">
             <label>Nama:</label>
             <input type="text" name="nama" required>
         </div>
-
         <div class="data">
             <label>Email:</label>
             <input type="email" name="email" required>
         </div>
-
         <div class="data">
             <label>Jenis Kelamin:</label><br>
             <input type="radio" name="jk" value="Laki-laki">
@@ -93,7 +84,6 @@
             <input type="radio" name="jk" value="Perempuan">
             Perempuan
         </div>
-
         <div class="data">
             <label>Hobi:</label><br>
             <input type="checkbox" name="hobi" value="Membaca">
@@ -103,7 +93,6 @@
             <input type="checkbox" name="hobi" value="Musik">
             Musik
         </div>
-
         <div class="data">
             <label>Program Studi:</label>
             <select name="prodi" required>
@@ -115,20 +104,14 @@
                 <option value="Peternakan">Peternakan</option>
             </select>
         </div>
-
         <div class="data">
             <label>Alamat:</label>
             <textarea name="alamat" rows="5"></textarea>
         </div>
-
         <button type="submit">Kirim</button>
         <button type="reset">Hapus</button>
-
     </form>
-
-    <!-- Tabel daftar mahasiswa -->
     <h2>Daftar Mahasiswa</h2>
-
     <table>
         <tr>
             <th>NIM</th>
@@ -136,49 +119,39 @@
             <th>Prodi</th>
             <th>IPK</th>
         </tr>
-
-        <tr>
-            <td>252520087</td>
-            <td>Oujisama</td>
-            <td>Teknologi Informasi</td>
-            <td>3.75</td>
-        </tr>
-
         <tr>
             <td>232510034</td>
             <td>Rosa Meilana</td>
             <td>Manajemen</td>
             <td>3.88</td>
         </tr>
-
         <tr>
             <td>242560090</td>
             <td>Tutus Aulia</td>
             <td>Hukum</td>
             <td>3.50</td>
         </tr>
-
+        <tr>
+            <td>212520045</td>
+            <td>Rizky Pratama</td>
+            <td>Teknik Sipil</td>
+            <td>3.75</td>
         <tr>
             <td>252520035</td>
             <td>Intan Pertiwi</td>
             <td>Teknologi Informasi</td>
             <td>3.90</td>
         </tr>
-
         <tr>
             <td>222520077</td>
             <td>Wahyu Ardi</td>
             <td>Peternakan</td>
             <td>3.65</td>
         </tr>
-
-        <!-- Menggabungkan empat kolom -->
         <tr>
             <td colspan="4">Jumlah mahasiswa: 5 orang</td>
         </tr>
     </table>
-
 </div>
-
 </body>
 </html>
