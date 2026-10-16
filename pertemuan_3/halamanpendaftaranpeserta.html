@@ -16,8 +16,7 @@
         <title>Form Pendaftaran Peserta</title>
     </head>
     <body>
-        <h1>Form Pendaftaran Peserta</h1>
-        <!-- Isi form pendaftaran peserta akan ditempatkan di sini -->
+        <h1>Pendaftaran Peserta</h1>
         <form action="proses_pendaftaran.php" method="post">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" required><br><br>
@@ -37,11 +36,33 @@
             <label for="jurusan">Jurusan:</label>
             <select id="jurusan" name="jurusan">
                 <option value="">Pilih Jurusan</option>
-                <option value="Informatika">Informatika</option>
-                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknologi Informasi">Teknologi Informasi</option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
             </select><br><br>
 
             <button type="submit">Kirim</button>
         <h2>Tabel</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jurusan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ahmad</td>
+                <td>Teknologi Informasi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Budi</td>
+                <td>Teknik Sipil</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Citra</td>
+                <td>Teknologi Informasi</td>
+            </tr>   
+            <!-- Data peserta akan ditampilkan di sini -->
     </body>
 </html>
