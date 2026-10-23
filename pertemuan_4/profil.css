@@ -1,107 +1,136 @@
+/*
+   Nama   : Devita Yulianti
+   NIM    : 252520020
+   Kelas  : TI.B
+   Matkul : Pemrograman Web
+   Pertemuan 4 - Profil CSS
+*/
 
-/* Mengatur ukuran elemen agar mencakup padding dan border */
-* {
-    box-sizing: border-box;
-}
+/* 1. Pengaturan semua elemen */
+    * {
+        box-sizing: border-box;
+    }
 
-/* Selector elemen: mengatur tampilan seluruh halaman */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #f1f5f9;
-    color: #334155;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-}
+/* 2. Tampilan halaman */
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #f1f5f9;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+    }
 
-/* Selector ID: mengatur bagian header */
-#header {
-    text-align: center;
-    background-color: #1e3a8a;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
+/* 3. Bagian header */
+    #header {
+        text-align: center;
+        background-color: #1e3a8a;
+        color: white;
+        padding: 18px;
+        border-radius: 8px;
+        border-bottom: 4px solid #60a5fa;
+    }
 
-/* Selector grup: mengatur beberapa elemen sekaligus */
-h1, h2 {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+/* 4. Judul halaman */
+    h1,
+    h2 {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
 
-/* Selector turunan: mengatur paragraf di dalam kartu profil */
-.profil-card p {
-    text-align: justify;
-}
+    h1 {
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-/* Selector class: mengatur kotak utama profil */
-.profil-card {
-    width: 400px;
-    max-width: 100%;
-    margin: 30px auto;
-    padding: 24px;
-    background-color: white;
-    border: 2px solid #cbd5e1;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+    h2 {
+        font-size: 20px;
+        color: #2563eb;
+    }
 
-/* Mengatur judul utama dan subjudul */
-h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-}
+/* 5. Kotak profil */
+    .profil-card {
+        width: 400px;
+        max-width: 100%;
+        margin: 25px auto;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+    }
 
-h2 {
-    font-size: 1.25rem;
-    color: #2563eb;
-}
+/* Paragraf di dalam profil */
+    .profil-card p {
+        text-align: justify;
+    }
 
-/* Mengatur deskripsi singkat */
-.deskripsi {
-    font-size: 16px;
-    line-height: 1.8;
-}
+/* Deskripsi profil */
+    .deskripsi {
+        font-size: 16px;
+        line-height: 1.7;
+    }
 
-/* Mengatur wadah daftar keahlian */
-.daftar-keahlian {
-    text-align: center;
-    margin-bottom: 20px;
-}
+/* 6. Daftar keahlian */
+    .daftar-keahlian {
+        text-align: center;
+        margin-bottom: 12px;
+    }
 
-/* Inline-block pertama: label keahlian */
-.keahlian {
-    display: inline-block;
-    background-color: #dbeafe;
-    color: #1e40af;
-    padding: 6px 12px;
-    margin: 4px;
-    border: 1px solid #93c5fd;
-    border-radius: 6px;
-    font-size: 14px;
-}
+/* Label keahlian */
+    .keahlian {
+        display: inline-block;
+        background-color: #dbeafe;
+        color: #1e40af;
+        padding: 5px 10px;
+        margin: 4px;
+        border: 1px solid #93c5fd;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: 0.2s;
+    }
 
-/* Inline-block kedua: tombol kontak */
-.tombol {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 10px 20px;
-    background-color: rgb(37, 99, 235);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
+/* Efek hover label keahlian */
+    .keahlian:hover {
+        background-color: #2563eb;
+        color: white;
+        cursor: default;
+    }
 
-/* Efek saat kursor berada di atas tombol */
-.tombol:hover {
-    background-color: #1d4ed8;
-}
+/* 7. Tombol kontak */
+    .tombol {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 9px 18px;
+        background-color: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
 
-/* Mengatur bagian footer */
-footer {
-    text-align: center;
-    color: gray;
-    font-size: 14px;
-}
+/* Efek hover tombol kontak */
+    .tombol:hover {
+        background-color: #1d4ed8;
+        transform: scale(1.05);
+    }
+
+/* 8. Bagian footer */
+    footer {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 20px;
+        padding-top: 12px;
+        border-top: 1px solid #cbd5e1;
+    }
+
+/* 9. Efek hover kartu profil */
+    .profil-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
