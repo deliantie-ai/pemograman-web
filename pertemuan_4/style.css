@@ -12,7 +12,7 @@ body {
     color: #334155;
     line-height: 1.6;
 }
-h1 { color: #1e3a8a; font-size: 2rem; text-align: center; }
+h1 { color: #1e3a8a; font-size: 2rem; text-align: center; } 
 .jurusan {
     text-align: center;
     font-style: italic;
@@ -28,6 +28,7 @@ h1 { color: #1e3a8a; font-size: 2rem; text-align: center; }
     background-color: #ffffff;
     border: 2px solid #cbd5e1;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
 .tombol {
